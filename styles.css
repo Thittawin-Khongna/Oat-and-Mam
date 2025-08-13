@@ -25,28 +25,66 @@ body {
 .info-box {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
 }
 
 .MARRIAGE {
-    font-family: "Dancing Script", cursive;
-    font-size: 5vw;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 8vw;
     font-weight: bold;
-    color: #ffffff;
+    color: #121331;
     text-align: center;
     margin-bottom: 1vw;
 }
 
 .OCCURRING {
-    font-family: "Sour Gummy", sans-serif;
+    font-family: "prompt", sans-serif;
     font-size: 2vw;
     font-weight: bold;
-    color: #ffffff;
+    color: #121331;
     text-align: center;
     margin-bottom: 2vw;
-    margin-top: 3vw; /* เพิ่มระยะห่างด้านบน */
+    margin-top: 1vw;
+}
+
+.img-2{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-second {
+    width: 60vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 2vw;
+}
+
+.text_2 {
+    text-align: center;
+}
+
+.text_name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #121331;
+    margin-top: 3vw;
+}
+
+.text_3{
+    font-size: 1.5vw;
+    color: #121331;
+    margin-top: -2vw;
+    line-height: 1.5;
+    font-family: "Shippori Mincho", serif; 
+    font-size: 1vw;
+    padding-bottom: 2vw;
+    text-align: center;
 }
 
 
@@ -54,10 +92,44 @@ body {
   .background {
     object-fit: cover;
   }
+
+  .MARRIAGE {
+    font-size: 10vw;
+  }
+  .OCCURRING {
+    font-size: 4vw;
+  }
+    .img-second {
+        width: 90vw;
+    }
+    .text_name {
+        font-size: 8vw;
+    }
+    .text_3 {
+        font-size: 1.5vw;
+        margin-top: -4vw;
+    }
 }
 
 @media (max-width: 480px) {
   .background {
     object-fit: cover;
   }
+  .MARRIAGE {
+    font-size: 12vw;
+  }
+  .OCCURRING {
+    font-size: 4vw;
+  }
+    .img-second {
+        width: 90vw;
+    }
+    .text_name {
+        font-size: 8vw;
+    }
+    .text_3 {
+        font-size: 1.3vw;
+        margin-top: -4vw;
+    }
+
 }
