@@ -113,6 +113,12 @@ body {
   width: 40vw;
 }
 
+.countdown-container{
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
 .countdown {
     margin-bottom: 1.5vw; /* แปลงจาก 3% */
     clear: both; /* เพิ่ม clear: both; */
@@ -159,16 +165,34 @@ body {
   .OCCURRING {
     font-size: 4vw;
   }
-    .img-second {
-        width: 90vw;
-    }
-    .text_name {
-        font-size: 8vw;
-    }
-    .text_3 {
-        font-size: 1.5vw;
-        margin-top: -4vw;
-    }
+  .img-second {
+    width: 90vw;
+  }
+  .text_name {
+    font-size: 8vw;
+  }
+  .text_3 {
+    font-size: 1.5vw;
+    margin-top: -4vw;
+  }
+  .Logo{
+    width: 15vw;
+  }
+  .text_above_time {
+    width: 75vw;
+  }
+  /* เพิ่มขนาด countdown */
+  #countdown {
+    gap: 5vw;
+    margin-top: 4vw;
+  }
+  .time-block span {
+    font-size: 10vw;
+    padding: 2.5vw;
+  }
+  .time-block p {
+    font-size: 2.5vw;
+  }
 }
 
 @media (max-width: 480px) {
@@ -181,15 +205,32 @@ body {
   .OCCURRING {
     font-size: 4vw;
   }
-    .img-second {
-        width: 90vw;
-    }
-    .text_name {
-        font-size: 8vw;
-    }
-    .text_3 {
-        font-size: 1.3vw;
-        margin-top: -4vw;
-    }
-
+  .img-second {
+    width: 90vw;
+  }
+  .text_name {
+    font-size: 8vw;
+  }
+  .text_3 {
+    font-size: 1.3vw;
+    margin-top: -4vw;
+  }
+  .Logo{
+    width: 15vw;
+  }
+  .text_above_time {
+    width: 75vw;
+  }
+  /* เพิ่มขนาด countdown */
+  #countdown {
+    gap: 6vw;
+    margin-top: 4vw;
+  }
+  .time-block span {
+    font-size: 8vw;
+    padding: 3vw;
+  }
+  .time-block p {
+    font-size: 3vw;
+  }
 }
