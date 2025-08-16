@@ -154,6 +154,35 @@ body {
     color: #121331;
 }
 
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-img {
+    width: 15vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 4vw;
+}
+
+.schedule_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-img2 {
+    width: 50vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+}
+
+.SP_273 {
+    width: 100%;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+}
+
 @media (max-width: 768px) {
   .background {
     object-fit: cover;
@@ -233,4 +262,10 @@ body {
   .time-block p {
     font-size: 3vw;
   }
+  .schedule-img {
+    width: 30vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+  }
+
 }
