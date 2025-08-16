@@ -173,7 +173,7 @@ body {
 }
 
 .schedule-img2 {
-    width: 50vw;
+    width: 60vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 2vw;
 }
@@ -222,6 +222,11 @@ body {
   .time-block p {
     font-size: 2.5vw;
   }
+  .schedule-img2 {
+    width: 80vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+  }
 }
 
 @media (max-width: 480px) {
@@ -264,6 +269,11 @@ body {
   }
   .schedule-img {
     width: 30vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+  }
+  .schedule-img2 {
+    width: 70vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 2vw;
   }
