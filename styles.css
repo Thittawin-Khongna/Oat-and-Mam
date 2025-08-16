@@ -79,7 +79,7 @@ body {
 .text_3{
     font-size: 1.5vw;
     color: #121331;
-    margin-top: -2vw;
+    margin-top: -4vw;
     line-height: 1.5;
     font-family: "Shippori Mincho", serif; 
     font-size: 1vw;
@@ -87,6 +87,66 @@ body {
     text-align: center;
 }
 
+.Logo_OM{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo{
+  width: 10vw;
+  margin-top: 3vw;
+}
+
+.text_4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.text_above_time {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.countdown {
+    margin-bottom: 1.5vw; /* แปลงจาก 3% */
+    clear: both; /* เพิ่ม clear: both; */
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+#countdown {
+    color: #121331;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+    gap: 3vw;
+}
+
+.time-block {
+    text-align: center;
+    margin-top: 2vw; /* ระยะห่างระหว่างบล็อกเวลา */
+}
+
+.time-block span {
+    font-size: 6vw; /* แปลงจาก 2em */
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500; /* ใช้ font-weight 300 สำหรับตัวเลข */
+    color: #121331;
+    padding: 2vw; /* ระยะห่างภายในกรอบ */
+}
+
+.time-block p {
+    margin-top: 0.2vw; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
+    font-size: 1.5vw; /* ขนาดข้อความ */
+    color: #121331;
+}
 
 @media (max-width: 768px) {
   .background {
