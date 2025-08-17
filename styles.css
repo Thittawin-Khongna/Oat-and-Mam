@@ -163,13 +163,12 @@ body {
 .schedule-img {
     width: 15vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
-    margin-top: 4vw;
+    margin-top: 6vw;
 }
 
 .schedule_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* ลบ display: flex; และ align-items: center; ออก */
+    text-align: center; /* ใช้ text-align เพื่อจัดภาพให้อยู่ตรงกลาง */
 }
 
 .schedule-img2 {
@@ -182,6 +181,74 @@ body {
     width: 100%;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
 }
+
+.carousel {
+    position: relative;
+    width: 26.5vw; /* เพิ่มขนาดให้ใหญ่ขึ้นในมือถือ */
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 5vw;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%; /* เปลี่ยนจาก 100% / 3 เป็น 100% เพื่อแสดงทีละ 1 รูป */
+  width: 100%; /* เพิ่ม width: 100% เข้ามา */
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  z-index: 100;   /* อยู่เหนือรูป */
+  transition: background 0.3s;
+  background: transparent;
+}
+
+.carousel-btn.prev { left: 15px; }
+.carousel-btn.next { right: 15px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1vw;
+  z-index: 200;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+.schedule-container {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    margin-top: 2vw;
+}
+
+
 
 @media (max-width: 768px) {
   .background {
@@ -273,9 +340,32 @@ body {
     margin-top: 2vw;
   }
   .schedule-img2 {
-    width: 70vw;
+    width: 65vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 2vw;
   }
+  .schedule-container {
+        /* flex-direction: column; เปลี่ยนทิศทางให้อยู่ในแนวตั้ง */
+        align-items: center;
+    }
+
+    .schedule_img {
+        margin-right: 0; /* ลบระยะห่างทางขวา */
+    }
+
+    .carousel {
+        width: 30vw;
+        margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
+        margin-right: 2vw;
+    }
+    .carousel-btn {
+        position: absolute;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        z-index: 100;   /* อยู่เหนือรูป */
+        transition: background 0.3s;
+        background: transparent;
+    }
 
 }
