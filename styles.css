@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  font-family: "prompt", sans-serif;
 }
 
 .img {
@@ -30,7 +31,7 @@ body {
 }
 
 .MARRIAGE {
-    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif; */
     font-size: 8vw;
     font-weight: bold;
     color: #121331;
@@ -39,7 +40,7 @@ body {
 }
 
 .OCCURRING {
-    font-family: "prompt", sans-serif;
+    /* font-family: "prompt", sans-serif; */
     font-size: 2vw;
     font-weight: bold;
     color: #121331;
@@ -69,7 +70,7 @@ body {
 }
 
 .text_name {
-    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif; */
     font-size: 5vw;
     font-weight: bold;
     color: #121331;
@@ -81,7 +82,7 @@ body {
     color: #121331;
     margin-top: -4vw;
     line-height: 1.5;
-    font-family: "Shippori Mincho", serif; 
+    /* font-family: "Shippori Mincho", serif;  */
     font-size: 1vw;
     padding-bottom: 2vw;
     text-align: center;
@@ -103,6 +104,16 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 2vw;
+}
+
+.text_above_time2 {
+  font-family: "prompt", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  font-style: normal;
+  color: #121331;
+  text-align: center;
+  margin-top: 2vw; /* ปรับระยะห่างด้านบน */
 }
 
 .text_above_time {
@@ -164,6 +175,15 @@ body {
     width: 15vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 6vw;
+}
+
+.schedule-text{
+    font-family: "prompt", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #121331;
+    text-align: center;
+    margin-top: 6vw; /* เพิ่มระยะห่างด้านบน */
 }
 
 .schedule_img {
@@ -252,6 +272,15 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 2vw;
+}
+
+.RSVP-text{
+    font-family: "prompt", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #121331;
+    text-align: center;
+    margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
 }
 
 .RSVP-img {
