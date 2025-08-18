@@ -318,9 +318,31 @@ body {
     align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
 }
 
+.map_text_box{
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    margin-top: 5vw;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+}
 
+.location-img{
+    width: 1.2vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+}
 
-@media (max-width: 768px) {
+.map_text{
+    font-family: "prompt", sans-serif;
+    font-size: 1vw;
+    font-weight: 300;
+    font-style: normal;
+    color: #121331;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+@media (max-width: 1024px) {
   .background {
     object-fit: cover;
   }
@@ -402,6 +424,7 @@ body {
     .RSVP-img22{
         width: 80vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
         height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+        margin-top: 2vw;
     }
     .text_thai{
         font-size: 3vw;
@@ -507,6 +530,7 @@ body {
     .RSVP-img22{
         width: 80vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
         height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+        margin-top: 2vw;
     }
     .text_thai{
         font-size: 3vw;
