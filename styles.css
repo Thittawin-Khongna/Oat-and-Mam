@@ -184,11 +184,10 @@ body {
 
 .carousel {
     position: relative;
-    width: 26.5vw; /* เพิ่มขนาดให้ใหญ่ขึ้นในมือถือ */
+    width: 35vw; /* เพิ่มขนาดให้ใหญ่ขึ้นในมือถือ */
     height: auto;
     overflow: hidden;
     border-radius: 15px;
-    margin-left: 5vw;
 }
 
 .carousel-track {
@@ -340,23 +339,24 @@ body {
     margin-top: 2vw;
   }
   .schedule-img2 {
-    width: 65vw;
+    width: 80vw;
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 2vw;
   }
   .schedule-container {
-        /* flex-direction: column; เปลี่ยนทิศทางให้อยู่ในแนวตั้ง */
+        flex-direction: column; /*เปลี่ยนทิศทางให้อยู่ในแนวตั้ง*/
         align-items: center;
     }
 
     .schedule_img {
         margin-right: 0; /* ลบระยะห่างทางขวา */
+        order: 1;
     }
 
     .carousel {
-        width: 30vw;
+        width: 90vw;
         margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
-        margin-right: 2vw;
+        order: 2;
     }
     .carousel-btn {
         position: absolute;
