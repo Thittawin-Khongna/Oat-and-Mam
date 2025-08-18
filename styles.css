@@ -569,6 +569,7 @@ body {
     .button_RSVP{
         font-size: 3vw;
         padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
+        width: 50vw;
     }
     .button_map{
         font-size: 3vw;
