@@ -380,6 +380,7 @@ body {
     font-weight: 500;
     font-style: italic;
     color: #121331;
+    border-radius: 200vw;
 }
 
 .RSVP-img22{
@@ -422,7 +423,7 @@ body {
 .map{
     width: 100%;
     height: auto; /* กำหนดความสูงของแผนที่ */
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 .button_map{
@@ -430,17 +431,18 @@ body {
     background-color: transparent;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
-    width: 98%;
+    width: 10vw;
     border: 0.2vw solid #121331;
-    border-radius: 2vw;
-    cursor: pointer;
+    border-radius: 200vw;
     text-decoration: none; /* ลบเส้นใต้ */
+    cursor: pointer;
     font-family: "prompt", sans-serif;
     font-size: 1vw;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     color: #121331;
+    
 }
 .gap{
     height: 5vw; /* กำหนดระยะห่างด้านบน */
@@ -570,7 +572,7 @@ body {
     .button_map{
         font-size: 3vw;
         padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
-        width: 90%;
+        width: 25vw;
     }
     .location-img{
         width: 3vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
