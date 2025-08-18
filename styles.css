@@ -395,6 +395,7 @@ body {
     display: flex; /* ใช้ Flexbox */
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
     align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    flex-direction: column;
 }
 
 .map_text_box{
@@ -458,6 +459,26 @@ body {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.Bank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    gap: 2vw;
+}
+.bank-text{
+    text-align: start;
+    font-family: "prompt", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+    color: #b8a28f;
+}
+.bank-img {
+    width: 20vw; /* ปรับขนาดให้เหมาะสม */
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
 }
 
 @media (max-width: 1024px) {
@@ -587,4 +608,21 @@ body {
     .gap{
         height: 20vw; /* ปรับระยะห่างด้านบนให้เหมาะสม */
     }
+    .Bank{
+        justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+        align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+
+    }
+    .bank-text{
+        text-align: start;
+        font-family: "prompt", sans-serif;
+        font-size: 3vw;
+        font-weight: 500;
+        font-style: normal;
+        color: #b8a28f;
+    }
+    .bank-img {
+        width: 40vw; /* ปรับขนาดให้เหมาะสม */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+}
 }
