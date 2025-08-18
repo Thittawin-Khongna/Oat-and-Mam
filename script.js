@@ -120,3 +120,29 @@
             observer.observe(element);
         });
     });
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-item');
+    const sections = document.querySelectorAll('section'); // สมมติว่าแต่ละเมนูลิงก์ไปที่ section
+
+    // ฟังก์ชันสำหรับกำหนด class 'active'
+    function setActiveNavItem() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.href.includes(current)) {
+                item.classList.add('active');
+            }
+        });
+    }
+
+    // เรียกใช้เมื่อหน้าจอโหลดและเมื่อมีการ scroll
+    window.addEventListener('scroll', setActiveNavItem);
+    setActiveNavItem();
+});
