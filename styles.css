@@ -41,7 +41,7 @@ body {
 
 .OCCURRING {
     /* font-family: "prompt", sans-serif; */
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: bold;
     color: #121331;
     text-align: center;
@@ -71,7 +71,7 @@ body {
 
 .text_name {
     /* font-family: "Cormorant Garamond", serif; */
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
     color: #121331;
     margin-top: 3vw;
@@ -82,7 +82,7 @@ body {
     color: #121331;
     margin-top: -4vw;
     line-height: 1.5;
-    /* font-family: "Shippori Mincho", serif;  */
+    font-family: "Shippori Mincho", serif; 
     font-size: 1vw;
     padding-bottom: 2vw;
     text-align: center;
@@ -371,6 +371,33 @@ body {
     margin-top: 1vw;
 }
 
+.map{
+    width: 100%;
+    height: auto; /* กำหนดความสูงของแผนที่ */
+    margin-top: 1vw;
+}
+
+.button_map{
+    margin-top: 1vw;
+    background-color: transparent;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 98%;
+    border: 0.2vw solid #121331;
+    border-radius: 2vw;
+    cursor: pointer;
+    text-decoration: none; /* ลบเส้นใต้ */
+    font-family: "prompt", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #121331;
+}
+.gap{
+    height: 5vw; /* กำหนดระยะห่างด้านบน */
+}
+
 @media (max-width: 1024px) {
   .background {
     object-fit: cover;
@@ -469,111 +496,20 @@ body {
         font-size: 3vw;
         padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
     }
-}
-
-@media (max-width: 480px) {
-  .background {
-    object-fit: cover;
-  }
-  .MARRIAGE {
-    font-size: 12vw;
-  }
-  .OCCURRING {
-    font-size: 4vw;
-  }
-  .img-second {
-    width: 90vw;
-  }
-  .text_name {
-    font-size: 8vw;
-  }
-  .text_3 {
-    font-size: 1.3vw;
-    margin-top: -4vw;
-  }
-  .Logo{
-    width: 15vw;
-  }
-  .text_above_time {
-    width: 75vw;
-  }
-  /* เพิ่มขนาด countdown */
-  #countdown {
-    gap: 6vw;
-    margin-top: 4vw;
-  }
-  .time-block span {
-    font-size: 8vw;
-    padding: 3vw;
-  }
-  .time-block p {
-    font-size: 3vw;
-  }
-  .schedule-img {
-    width: 30vw;
-    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
-    margin-top: 2vw;
-  }
-  .schedule-img2 {
-    width: 80vw;
-    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
-    margin-top: 2vw;
-  }
-  .schedule-container {
-        flex-direction: column; /*เปลี่ยนทิศทางให้อยู่ในแนวตั้ง*/
-        align-items: center;
-    }
-
-    .schedule_img {
-        margin-right: 0; /* ลบระยะห่างทางขวา */
-        order: 1;
-    }
-
-    .carousel {
-        width: 90vw;
-        margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
-        order: 2;
-    }
-    .carousel-btn {
-        position: absolute;
-        color: white;
-        border: none;
-        font-size: 1rem;
-        z-index: 100;   /* อยู่เหนือรูป */
-        transition: background 0.3s;
-        background: transparent;
-    }
-    .RSVP-img{
-        margin-top: 6vw;
-        width: 30vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
-        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
-    }
-    .RSVP{
-        flex-direction: column; /* เปลี่ยนทิศทางให้อยู่ในแนวตั้ง */
-        align-items: center;
-    }
-    .RSVP-img2{
-        margin-top: 2vw;
-        order: 2;
-    }
-    .RSVP-img22{
-        width: 80vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
-        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
-        margin-top: 2vw;
-    }
-    .text_thai{
-        font-size: 3vw;
-        text-align: center;
-        order: 1;
-    }
-    .text_eng{
-        font-size: 3vw;
-        text-align: center;
-        order: 1;
-    }
-    .button_RSVP{
+    .button_map{
         font-size: 3vw;
         padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
+        width: 90%;
     }
-
+    .location-img{
+        width: 3vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    }
+    .map_text{
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    .gap{
+        height: 10vw; /* ปรับระยะห่างด้านบนให้เหมาะสม */
+    }
 }
