@@ -247,6 +247,77 @@ body {
     margin-top: 2vw;
 }
 
+.RSVP_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.RSVP-img {
+    width: 20vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.RSVP{
+    margin-top: 2vw;
+    justify-content: center;
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    margin-top: 2vw;
+}
+
+.text_thai {
+    font-family: "prompt", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    color: #121331;
+    text-align: center;
+}
+
+.text_eng{
+  font-family: "prompt", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: italic;
+  color: #121331;
+  text-align: center;
+}
+
+.button_RSVP{
+    background-color: transparent;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    border: 0.2vw solid #121331;
+    border-radius: 1vw;
+    cursor: pointer;
+    text-decoration: none; /* ลบเส้นใต้ */
+    font-family: "prompt", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    color: #121331;
+}
+
+.RSVP-img22{
+    width: 50vw;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    margin-right: 2vw;
+    border-radius: 1vw;
+}
+
+.button_box{
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+}
+
 
 
 @media (max-width: 768px) {
@@ -314,6 +385,37 @@ body {
         z-index: 100;   /* อยู่เหนือรูป */
         transition: background 0.3s;
         background: transparent;
+    }
+    .RSVP-img{
+        margin-top: 6vw;
+        width: 30vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    }
+    .RSVP{
+        flex-direction: column; /* เปลี่ยนทิศทางให้อยู่ในแนวตั้ง */
+        align-items: center;
+    }
+    .RSVP-img2{
+        margin-top: 2vw;
+        order: 2;
+    }
+    .RSVP-img22{
+        width: 80vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    }
+    .text_thai{
+        font-size: 3vw;
+        text-align: center;
+        order: 1;
+    }
+    .text_eng{
+        font-size: 3vw;
+        text-align: center;
+        order: 1;
+    }
+    .button_RSVP{
+        font-size: 3vw;
+        padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
     }
 }
 
@@ -388,6 +490,37 @@ body {
         z-index: 100;   /* อยู่เหนือรูป */
         transition: background 0.3s;
         background: transparent;
+    }
+    .RSVP-img{
+        margin-top: 6vw;
+        width: 30vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    }
+    .RSVP{
+        flex-direction: column; /* เปลี่ยนทิศทางให้อยู่ในแนวตั้ง */
+        align-items: center;
+    }
+    .RSVP-img2{
+        margin-top: 2vw;
+        order: 2;
+    }
+    .RSVP-img22{
+        width: 80vw; /* ปรับขนาดให้เหมาะสมกับมือถือ */
+        height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    }
+    .text_thai{
+        font-size: 3vw;
+        text-align: center;
+        order: 1;
+    }
+    .text_eng{
+        font-size: 3vw;
+        text-align: center;
+        order: 1;
+    }
+    .button_RSVP{
+        font-size: 3vw;
+        padding: 1vw 2vw; /* ปรับขนาดปุ่มให้เหมาะสม */
     }
 
 }
