@@ -482,6 +482,15 @@ body {
         height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
         margin-top: 2vw;
     }
+    .schedule-text{
+        font-size: 5vw;
+        margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
+    }
+    .RSVP-text{
+        font-size: 5vw;
+        margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
+        margin-bottom: -5vw;
+    }
     .text_thai{
         font-size: 3vw;
         text-align: center;
