@@ -97,5 +97,5 @@
     // Auto Play
     setInterval(() => {
     moveTo(index + 1);
-    }, 3000);
+    }, 5000);
 

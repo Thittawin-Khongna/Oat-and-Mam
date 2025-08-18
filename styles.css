@@ -293,6 +293,28 @@ body {
     height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
     margin-top: 2vw;
   }
+  .schedule-container {
+        flex-direction: column; /*เปลี่ยนทิศทางให้อยู่ในแนวตั้ง*/
+        align-items: center;
+    }
+
+    .schedule_img {
+        margin-right: 0; /* ลบระยะห่างทางขวา */
+    }
+
+    .carousel {
+        width: 90vw;
+        margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
+    }
+    .carousel-btn {
+        position: absolute;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        z-index: 100;   /* อยู่เหนือรูป */
+        transition: background 0.3s;
+        background: transparent;
+    }
 }
 
 @media (max-width: 480px) {
