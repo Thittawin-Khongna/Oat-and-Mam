@@ -146,3 +146,33 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', setActiveNavItem);
     setActiveNavItem();
 });
+
+function copyAccount() {
+  const account = document.getElementById("account-number").innerText.trim();
+
+  // ใช้ navigator.clipboard (รองรับ Chrome/Edge/Safari ใหม่ ๆ)
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(account).then(() => {
+      showMessage();
+    }).catch(err => {
+      console.error("คัดลอกไม่สำเร็จ:", err);
+    });
+  } else {
+    // fallback สำหรับ browser เก่า
+    const textarea = document.createElement("textarea");
+    textarea.value = account;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+    showMessage();
+  }
+}
+
+function showMessage() {
+  const msg = document.getElementById("copy-message");
+  msg.style.display = "block";
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 2000);
+}
