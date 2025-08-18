@@ -475,6 +475,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: #b8a28f;
+    text-decoration: none;
 }
 .bank-img {
     width: 20vw; /* ปรับขนาดให้เหมาะสม */
